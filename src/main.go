@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"src/bar_go_proto"
+	bar_go_proto "src/my_bar_importpath"
 	"src/foo_go_proto"
 )
 

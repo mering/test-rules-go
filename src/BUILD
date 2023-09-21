@@ -9,7 +9,7 @@ proto_library(
 go_proto_library(
     name = "bar_go_proto",
     protos = [":bar_proto"],
-    importpath = "src/bar_go_proto",
+    importpath = "src/my_bar_importpath"
 )
 
 proto_library(
@@ -22,7 +22,6 @@ go_proto_library(
     name = "foo_go_proto",
     protos = [":foo_proto"],
     deps = [":bar_go_proto"],
-    importpath = "src/foo_go_proto",
 )
 
 go_binary(
@@ -32,5 +31,4 @@ go_binary(
         ":bar_go_proto",
         ":foo_go_proto",
     ],
-    importpath = "src/main",
 )
