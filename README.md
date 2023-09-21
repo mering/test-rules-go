@@ -1,0 +1,1 @@
+Run with `BAZEL_CXXOPTS="-std=c++14" bazel run //src:main`.

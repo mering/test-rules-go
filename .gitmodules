@@ -1,0 +1,3 @@
+[submodule "rules_go"]
+	path = rules_go
+	url = https://github.com/mering/rules_go.git
