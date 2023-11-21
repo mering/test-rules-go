@@ -3,13 +3,16 @@ package main
 import (
 	"fmt"
 
-	"src/bar_proto"
+	"src/msg_proto"
 	"src/foo_proto"
+	svc "src/svc_go"
 )
 
 func main() {
 	foo := &foo_proto.Foo{}
-	foo.Bar = &bar_proto.Bar{}
-	foo.Bar.X = 5
-	fmt.Println("Hello world:", foo.Bar.X)
+	foo.Msg = &msg_proto.Msg{}
+	foo.Msg.Payload = "world"
+	fmt.Println("Hello", foo.Msg.Payload)
+
+	svc.Run()
 }

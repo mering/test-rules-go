@@ -4,6 +4,6 @@ package proto;
 
 import "src/msg.proto";
 
-message Foo {
-    Msg msg = 1;
+service Greeter {
+  rpc SayHello (Msg) returns (Msg) {}
 }

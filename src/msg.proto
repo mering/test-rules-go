@@ -2,6 +2,6 @@ syntax = "proto3";
 
 package proto;
 
-message Bar {
-  double x = 1;
+message Msg {
+  string payload = 1;
 }
